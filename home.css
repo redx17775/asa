@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3vh;
   }
   .container .head .logo h1 {
     margin: 0;
