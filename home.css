@@ -34,7 +34,7 @@ body {
     width: 100%;
     text-align: center;
     font-family: "YOZAKURA";
-    font-size: 3em;
+    font-size: 3.5em;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -62,10 +62,10 @@ body {
     align-items: flex-end;
   }
   .container .head .nav ul li {
-    padding: 10%;
+    padding: 15%;
   }
   .container .head .nav ul li img {
-    width: 2.5rem;
+    width: 1.5rem;
   }
 
   /*------------ user ------------*/
@@ -147,7 +147,7 @@ body {
   }
   .container .head .logo h1 {
     font-family: "YOZAKURA";
-    font-size: 5em;
+    font-size: 3.5em;
   }
   /*------------ nav ------------*/
 
@@ -159,14 +159,14 @@ body {
   }
   .container .head .nav ul {
     list-style: none;
-    line-height: 6rem;
+    line-height: 3.5rem;
     padding: 0;
     display: block;
   }
 
   /*style the nav*/
   .container .head .nav ul li img {
-    width: 2.5rem;
+    width: 1.5rem;
   }
 
   /*center the user*/
