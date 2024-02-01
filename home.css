@@ -20,7 +20,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-image: url(img/body/wallpeper1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*utal class*/
 .border {
@@ -29,7 +32,6 @@ body {
 
 /* Styleing of some elment*/
 .container {
-  background-color: black;
   width: 100%;
   height: 100vh;
   color: white;
@@ -128,6 +130,11 @@ body {
 
   /*set grid for head*/
   .container .head {
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 2rem 2rem 0;
+    background-color: black;
     display: grid;
     grid-auto-rows: 15% 50% 35%;
     grid-template-areas:
@@ -217,9 +224,30 @@ body {
   }
 
   /*------------------------ main ------------------------*/
-  .container .main {
-    height: 100vh;
+  .container .main-padding {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
+  }
+  .container .main-padding .img-main {
+    position: absolute;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main-padding .img-main img {
+    height: 100%;
+  }
+  .container .main {
+    height: 96vh;
+    width: 100%;
+    border-radius: 2rem;
     background-image: url(img/main/main-wallpeper.jpg);
     background-position: top;
     background-repeat: no-repeat;
@@ -227,43 +255,80 @@ body {
     overflow: hidden;
   }
   /*--- text_wallpeper ---*/
-  .container .main .colored {
+  .container .main .itColored {
     font-family: "INVASION2000";
-    font-size: 6vw;
+    font-size: 7vw;
     text-align: center;
     margin: 0;
     padding: 1%;
     position: relative;
-    top: 1vh;
   }
-  .container .main .colored span {
+  .container .main .itColored span {
     color: blueviolet;
   }
   .container .main .notColored {
     font-family: BACKTO1982;
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: center;
     margin: 0;
     padding: 1%;
     position: relative;
   }
-  .container .main #colored2 {
-    top: 5vh;
+  .container .main .text-Wallpaper {
+    display: grid;
+    gap: 1%;
+    grid-template-areas:
+      "text1"
+      "text2"
+      "text3"
+      "text4"
+      "text5"
+      "text6"
+      "text7"
+      "text8";
   }
-  .container .main #colored3 {
-    top: 10vh;
+  .container .main .text-Wallpaper {
+    grid-template-areas:
+      "text1"
+      "text2"
+      "text3"
+      "text4"
+      "text5"
+      "text6"
+      "text7"
+      "text8";
   }
-  .container .main #colored4 {
-    top: 15vh;
+  div[class*="cont-colored"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .container .main #colored5 {
-    top: 20vh;
+  .container .main .text-Wallpaper p {
+    display: block;
   }
-  .container .main #colored6 {
-    top: 25vh;
+  .container .main .text-Wallpaper .colored1 {
+    grid-area: text1;
   }
-  .container .main #colored6 {
-    top: 25vh;
+  .container .main .text-Wallpaper .colored2 {
+    grid-area: text2;
+  }
+  .container .main .text-Wallpaper .colored3 {
+    grid-area: text3;
+  }
+  .container .main .text-Wallpaper .colored4 {
+    grid-area: text4;
+  }
+  .container .main .text-Wallpaper .colored5 {
+    grid-area: text5;
+  }
+  .container .main .text-Wallpaper .colored6 {
+    grid-area: text6;
+  }
+  .container .main .text-Wallpaper .colored7 {
+    grid-area: text7;
+  }
+  .container .main .text-Wallpaper .colored8 {
+    grid-area: text8;
   }
 
   /*------------------------ final ------------------------*/
@@ -271,7 +336,7 @@ body {
   /*set the layout*/
   .container-grid {
     display: grid;
-    grid-auto-columns: 15% 55% 30%;
+    grid-auto-columns: 10% 55% 35%;
     grid-template-areas:
       "one"
       "two"
