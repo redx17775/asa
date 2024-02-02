@@ -370,7 +370,7 @@ body {
   /*--- text_wallpeper ---*/
   .container .main .itColored {
     font-family: "INVASION2000";
-    font-size: 7vw;
+    font-size: 10vw;
     text-align: center;
     margin: 0;
     padding: 1%;
@@ -381,7 +381,7 @@ body {
   }
   .container .main .notColored {
     font-family: BACKTO1982;
-    font-size: 5vw;
+    font-size: 7vw;
     text-align: center;
     margin: 0;
     padding: 1%;
@@ -449,25 +449,24 @@ body {
   /*set the layout*/
   .container-grid {
     display: grid;
-    grid-auto-columns: 10% 55% 35%;
+    grid-auto-columns: 12% 55% 33%;
     grid-template-areas:
       "one"
       "two"
       "three"
       "four"
-      "five"
-      "six";
+      "five";
   }
   .container-grid {
     grid-template-areas:
-      "one two tree"
+      "one two three"
       "one two four"
       "one two five";
   }
   .container-grid .head {
     grid-area: one;
   }
-  .container .main {
+  .container-grid .main {
     grid-area: two;
   }
 }
