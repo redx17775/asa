@@ -416,9 +416,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .container .main .text-Wallpaper p {
-    display: block;
-  }
   .container .main .text-Wallpaper .colored1 {
     grid-area: text1;
   }
@@ -443,6 +440,16 @@ body {
   .container .main .text-Wallpaper .colored8 {
     grid-area: text8;
   }
+  /*------------------------ start area_three ------------------------*/
+  .container-grid .area_three {
+    display: grid;
+    grid-area: "w1" "w2" "w3";
+    width: 100%;
+    height: 100vh;
+  }
+  .container-grid .area_three {
+    grid-area: "w1" "w2" "w3";
+  }
 
   /*------------------------ final ------------------------*/
 
@@ -453,20 +460,18 @@ body {
     grid-template-areas:
       "one"
       "two"
-      "three"
-      "four"
-      "five";
+      "three";
   }
   .container-grid {
-    grid-template-areas:
-      "one two three"
-      "one two four"
-      "one two five";
+    grid-template-areas: "one two three";
   }
   .container-grid .head {
     grid-area: one;
   }
   .container-grid .main {
     grid-area: two;
+  }
+  .container-grid .area_three {
+    grid-area: three;
   }
 }
