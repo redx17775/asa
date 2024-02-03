@@ -70,6 +70,7 @@ body {
     border-radius: 0 0 2rem 2rem;
     background-color: black;
     height: 24vh;
+    width: 100%;
   }
   /*------------ logo ------------*/
   .container .head .logo {
