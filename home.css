@@ -57,6 +57,11 @@ body {
   color: white;
 }
 
+.img_hidden {
+  position: absolute;
+  top: -100vh;
+}
+
 /*------------ phone ------------*/
 @media (max-width: 50rem) {
   /*------------------------ head ------------------------*/
