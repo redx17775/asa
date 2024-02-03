@@ -43,7 +43,7 @@ body {
   background-image: url(img/body/wallpeper1.jpg);
   background-position: center;
   background-size: cover;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /*utal class*/
 .border {
