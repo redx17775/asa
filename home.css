@@ -571,7 +571,7 @@ body {
   /*------------------------ start area_three ------------------------*/
   .container-grid .area_three {
     display: grid;
-    grid-template-areas: "w1" "w2" "w3";
+    grid-template-areas: "w1" "w2" "w3" "w4";
     width: 100%;
     height: 100vh;
   }
@@ -613,6 +613,15 @@ body {
   }
   .container-grid .area_three .area_three_2nd {
     grid-area: w2;
+    background-image: url(img/area_3/—Pngtree—lines\ seamless\ pattern_7301526.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh;
+    border: 1px solid black;
+    filter: invert(1);
+  }
+  .container-grid .area_three .area_three_2nd_secand {
+    grid-area: w4;
     background-image: url(img/area_3/—Pngtree—lines\ seamless\ pattern_7301526.png);
     background-repeat: no-repeat;
     background-position: center;
