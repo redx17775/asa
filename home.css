@@ -43,7 +43,7 @@ body {
   background-image: url(img/body/wallpeper1.jpg);
   background-position: center;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /*utal class*/
 .border {
@@ -158,6 +158,7 @@ body {
   .container .main-padding .img-main {
     position: absolute;
     height: 100vh;
+    width: 100%;
     z-index: 1;
     overflow: hidden;
     display: flex;
@@ -165,7 +166,7 @@ body {
     align-items: center;
   }
   .container .main-padding .img-main img {
-    height: 100%;
+    height: 100vh;
   }
   .container .main {
     height: 96vh;
@@ -253,6 +254,107 @@ body {
   }
   .container .main .text-Wallpaper .colored8 {
     grid-area: text8;
+  }
+
+  /*------------------------ start area_three ------------------------*/
+  .container-grid .area_three {
+    display: grid;
+    grid-template-areas: "w2" "w1" "w4" "w3";
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container-grid .area_three .area_three_1st {
+    grid-area: w1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 10%;
+    border-radius: 3rem;
+  }
+  .container-grid .area_three .area_three_1st .website {
+    font-family: "Neon Energ";
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  .container-grid .area_three .area_three_1st .New_templet {
+    font-family: LTAspirerNeue-Thin;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .container-grid .area_three .area_three_1st .New_templet span {
+    color: blueviolet;
+  }
+  .container-grid .area_three .area_three_1st button {
+    font-family: SS;
+    font-size: 2rem;
+    height: 8vh;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3rem;
+  }
+  .container-grid .area_three .area_three_1st button:hover {
+    background-color: #6922ac;
+  }
+  .container-grid .area_three .area_three_2nd {
+    grid-area: w2;
+    background-image: url(img/area_3/—Pngtree—lines\ seamless\ pattern_7301526.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh;
+    border: 1px solid black;
+    filter: invert(1);
+  }
+  .container-grid .area_three .area_three_2nd_secand {
+    grid-area: w4;
+    background-image: url(img/area_3/—Pngtree—lines\ seamless\ pattern_7301526.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh;
+    border: 1px solid black;
+    filter: invert(1);
+  }
+  .container-grid .area_three .area_three_3rd {
+    grid-area: w3;
+    background-color: #000000;
+    display: grid;
+    grid-template-areas: "text img";
+    border-radius: 3rem;
+  }
+  .container-grid .area_three .area_three_3rd .three_text {
+    grid-area: text;
+    display: flex;
+    align-items: end;
+  }
+  .container-grid .area_three .area_three_3rd .three_img {
+    grid-area: img;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin-right: 3rem;
+  }
+  .container-grid .area_three .area_three_3rd img {
+    filter: invert(1);
+    height: 7vh;
+  }
+  .container-grid .area_three .area_three_3rd button {
+    margin-top: 5vh;
+    background-color: #8a2be2;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+  }
+  .container-grid .area_three .area_three_3rd p {
+    font-family: "Midorima";
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 0;
+  }
+  .container-grid .area_three .area_three_3rd span {
+    color: blueviolet;
   }
 }
 
