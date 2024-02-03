@@ -300,6 +300,7 @@ body {
     background-color: blueviolet;
     border: none;
     border-radius: 3rem;
+    color: #000000;
   }
   .container-grid .area_three .area_three_1st button:hover {
     background-color: #6922ac;
@@ -607,6 +608,7 @@ body {
     background-color: blueviolet;
     border: none;
     border-radius: 3rem;
+    color: #000000;
   }
   .container-grid .area_three .area_three_1st button:hover {
     background-color: #6922ac;
